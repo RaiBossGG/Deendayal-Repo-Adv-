@@ -15,6 +15,9 @@ def list_to_str(lst):
     return ""
 
 async def fetch_image(url, size=(720, 400)):
+     if not Deendayal_IMAGE_FETCH:
+        print("Image fetching is disabled.")
+        return None
     try:
         async with aiohttp.ClientSession() as session:
             async with session.get(url) as response:
