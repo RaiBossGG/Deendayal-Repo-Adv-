@@ -3,6 +3,7 @@ import aiohttp
 import asyncio
 from io import BytesIO
 from PIL import Image
+from info import Deendayal_IMAGE_FETCH
 from imdb import Cinemagoer
 
 # Initialize IMDb instance using Cinemagoer
